@@ -1,10 +1,11 @@
 ﻿# Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define a = Character("character1") # character #1
-define b = Character("character2") # character #2
-define c = Character("character3") # character #3
+define bs = Character("Banana Square") # character 1, Banana Square - Male
+define ra = Character("Round Apple") # character 2, Round Apple - Female
+define tc = Character("Tree Cut Rhombus") # character 3, Tree Cut Rhombus - Male
 define yn = Character("[ynName]") # y/n
+default ynName = "Aida" # default
 
 # default heshe="he"
 # default himher="him"
@@ -43,6 +44,9 @@ label start:
         
     $ ynName = renpy.input("What's your name?", "", length=16, exclude=" 0123456789+=,.?!<>{}[]()").strip() or "y/n"
 
+    jump game
+
+label game:
     scene bg room
 
     # These display lines of dialogue.
