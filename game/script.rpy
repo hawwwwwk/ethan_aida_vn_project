@@ -20,7 +20,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen angry
+    show eileen happy
 
     # These display lines of dialogue.
 
